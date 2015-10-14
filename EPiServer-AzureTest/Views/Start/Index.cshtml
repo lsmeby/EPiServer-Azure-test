@@ -1,5 +1,7 @@
-﻿@model EPiServer_AzureTest.Models.Pages.StartPage
+﻿@model EPiServer_AzureTest.Models.ViewModels.StartPageViewModel
 
-<h1>@Model.PageName</h1>
-<p>@Model.WelcomeMessage</p>
+<h1>@Model.CurrentPage.PageName</h1>
+<p>@Model.CurrentPage.WelcomeMessage</p>
+<p>@Model.CSharpVersion</p>
+<p>The square root of 25 is @Model.SquareRoot</p>
 <img src="~/Content/Images/peter_griffin.gif"/>
